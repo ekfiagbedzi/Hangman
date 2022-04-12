@@ -21,3 +21,5 @@ Completed the ask lettter method by including code that would check if the lette
 
 ## Milestone 4
 I completed the program by adding code that will recursively ask the user for an input until the user guesses the word or the numbe rof lives is finished
+
+Started code for visualising hangman
