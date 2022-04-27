@@ -23,4 +23,4 @@ Completed the ask lettter method by including code that would check if the lette
 I completed the program by adding code that will recursively ask the user for an input until the user guesses the word or the numbe rof lives is finished
 
 ## Bonus
-Added code to visualize a part of the hangman whenever a wrong answer is provided
+Added code to visualize a part of the hangman whenever a wrong answer is provided. First the arms, then head, neck torso and legs
