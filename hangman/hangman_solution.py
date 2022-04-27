@@ -5,6 +5,11 @@ or you will get 0 for this assignment.
 '''
 import random
 import numpy as np
+print_list = [" _____\n| o o |\n|  >  |\n|__v__|\n",
+              " _____\n| o o |\n|  >  |\n|__v__|\n" + "   |\n   |\n",
+              " _____\n| o o |\n|  >  |\n|__v__|\n" + "   |\n   |\n" + "-------\n|     |",
+              " _____\n| o o |\n|  >  |\n|__v__|\n" + "   |\n   |\n" + "-------\n|  |  |" + "\n   |\n   |\n",
+              " _____\n| o o |\n|  >  |\n|__v__|\n" + "   |\n   |\n" + "-------\n" + "|  |  |\n   |\n   |\n" + "-------\n|     |\n|     |"]
 
 class Hangman:
     '''
@@ -48,6 +53,12 @@ class Hangman:
         self.word_guessed = ["_"] * self.num_letters
         self.num_lives = num_lives
         self.list_letter = []
+        self.body_count = 0
+        self.print_list = [" _____\n| o o |\n|  >  |\n|__v__|\n",
+              " _____\n| o o |\n|  >  |\n|__v__|\n" + "   |\n   |\n",
+              " _____\n| o o |\n|  >  |\n|__v__|\n" + "   |\n   |\n" + "-------\n|     |",
+              " _____\n| o o |\n|  >  |\n|__v__|\n" + "   |\n   |\n" + "-------\n|  |  |" + "\n   |\n   |\n",
+              " _____\n| o o |\n|  >  |\n|__v__|\n" + "   |\n   |\n" + "-------\n" + "|  |  |\n   |\n   |\n" + "-------\n|     |\n|     |"]
         
         print("The mistery word has {} characters".format(self.num_letters))
         print("{}".format(self.word_guessed))
@@ -65,6 +76,7 @@ class Hangman:
             The letter to be checked
 
         '''
+
         # checks if entered letter is correct
         if letter in list(self.word):
             letter_indices = np.where(np.array(list(self.word)) == letter)[0]
@@ -75,7 +87,10 @@ class Hangman:
         # subtracts -1 from `num_lives` if letter is incorrect
         else:
             self.num_lives -= 1
+
             print("Your guess {} was incorrect. You have {} lives left".format(letter, self.num_lives))
+            print(self.print_list[self.body_count])
+            self.body_count += 1
         print(self.word_guessed)
 
     def ask_letter(self):
