@@ -1,8 +1,3 @@
-'''
-Make sure you complete all the TODOs in this file.
-The prints have to contain the same text as indicated, don't add any more prints,
-or you will get 0 for this assignment.
-'''
 import random
 import numpy as np
 print_list = [" _____\n| o o |\n|  >  |\n|__v__|\n",
