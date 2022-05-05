@@ -49,11 +49,7 @@ class Hangman:
         self.num_lives = num_lives
         self.list_letter = []
         self.body_count = 0
-        self.print_list = [" _____\n| o o |\n|  >  |\n|__v__|\n",
-              " _____\n| o o |\n|  >  |\n|__v__|\n" + "   |\n   |\n",
-              " _____\n| o o |\n|  >  |\n|__v__|\n" + "   |\n   |\n" + "-------\n|     |",
-              " _____\n| o o |\n|  >  |\n|__v__|\n" + "   |\n   |\n" + "-------\n|  |  |" + "\n   |\n   |\n",
-              " _____\n| o o |\n|  >  |\n|__v__|\n" + "   |\n   |\n" + "-------\n" + "|  |  |\n   |\n   |\n" + "-------\n|     |\n|     |"]
+        self.print_list = print_list
         
         print("The mistery word has {} characters".format(self.num_letters))
         print("{}".format(self.word_guessed))
