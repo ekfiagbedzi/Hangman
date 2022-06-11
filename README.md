@@ -35,5 +35,5 @@ I created a function `play_game` that will start the game
 ![code-snapshot](https://user-images.githubusercontent.com/71975468/166813986-4b87045c-5e51-48f6-969a-5311bfa48e8a.png)
 
 ## Hangman Visualization
-Added code to visualize a part of the hangman whenever a wrong answer is provided. First the arms, then head, neck torso and legs
+Added code to visualize a part of the hangman whenever a wrong answer is provided. First the arms, then head, neck, torso and legs
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/71975468/166814426-ff586532-2ca5-48da-8d19-1d7f02b92724.png">
